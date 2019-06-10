@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Start your development with a Design System for Bootstrap 4.">
+  <meta name="author" content="Creative Tim">
+  <title>Kanaria framework</title>
+  <!-- Favicon -->
+  <link href="../assets/img/brand/favicon.png" rel="icon" type="image/png">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <!-- Icons -->
+  <link href="../assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+  <link href="../assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Argon CSS -->
+  <link type="text/css" href="../assets/css/argon.css?v=1.0.1" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../Download/kanaria.css">
+
+
+</head>
+
+<body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-default">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">Kanaria</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-info" aria-controls="navbar-info" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-info">
+            <div class="navbar-collapse-header">
+              <div class="row">
+                <div class="col-6 collapse-brand">
+                  <a href="../index.html">
+                    <img src="../assets/img/brand/kanaria.png">
+                  </a>
+                </div>
+                <div class="col-6 collapse-close">
+                  <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-info" aria-controls="navbar-info" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link nav-link-icon" href="../index.html">
+                  <i class="fa fa-home"></i>
+                  <span class="nav-link-inner--text">Inicio</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-icon" href="#">
+                  <i class="fa fa-github"></i>
+                  <span class="nav-link-inner--text">Github</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-icon" href="../Download/kanaria.zip" target="_blank" download="kanaria.zip">
+                  <i class="fa fa-download"></i>
+                  <span class="nav-link-inner--text">Descargar</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+   
+    <section class="section section-components pb-0" id="section-components">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <!-- sistema de grillas -->
+            <h2 class="mb-5">
+              <span>Sistema de grillas</span>
+            </h2>
+            <p>El sistema de grillas esta conformado por 12 divisiones de pantalla.</p>
+            <div class="row">
+              <div class="col-b-1" style="background-color: gray;  border-style: solid;border-color: white; color: white;">col-b-1</div>
+              <div class="col-b-1" style="background-color: gray;  border-style: solid;border-color: white; color: white;">col-b-1</div>
+              <div class="col-b-1" style="background-color: gray;  border-style: solid;border-color: white; color: white;">col-b-1</div>
+              <div class="col-b-1" style="background-color: gray;  border-style: solid;border-color: white; color: white;">col-b-1</div>
+              <div class="col-b-1" style="background-color: gray;  border-style: solid;border-color: white; color: white;">col-b-1</div>
+              <div class="col-b-1" style="background-color: gray;  border-style: solid;border-color: white; color: white;">col-b-1</div>
+              <div class="col-b-1" style="background-color: gray;  border-style: solid;border-color: white; color: white;">col-b-1</div>
+              <div class="col-b-1" style="background-color: gray;  border-style: solid;border-color: white; color: white;">col-b-1</div>
+              <div class="col-b-1" style="background-color: gray;  border-style: solid;border-color: white; color: white;">col-b-1</div>
+              <div class="col-b-1" style="background-color: gray;  border-style: solid;border-color: white; color: white;">col-b-1</div>
+              <div class="col-b-1" style="background-color: gray;  border-style: solid;border-color: white; color: white;">col-b-1</div>
+              <div class="col-b-1" style="background-color: gray;  border-style: solid;border-color: white; color: white;">col-b-1</div>
+            </div>
+
+            <p>puedes llamar el sistema de grillas de la siguiente manera.</p>
+            <pre> 
+            <code  >
+&lt;div class="row">
+  &lt;div class="col-s-1 col-b-1 col-xl-1">
+  &lt;/div>
+&lt;/div>
+
+
+            </code></pre>
+            <p>Las medidas para este framework son las siguientes:</p>
+            <table>
+              <thead style="color: black;">
+                <tr>
+                  <th>
+                    tamaños
+                  </th>
+                  <th>
+                    clase
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Tablets</th>
+                  <th>col-s-</th>
+                </tr>
+                <tr>
+                  <th>monitores max.1200px</th>
+                  <th>col-b-</th>
+                </tr> 
+                <tr>
+                  <th>monitores extralargos >1200px</th>
+                  <th>col-xl-</th>
+                </tr>
+              </tbody>
+            </table>
+            <p>Por defecto el tamaño para moviles esta automatizado, asi que no te aflijas si no hay una categoria para moviles</p>
+
+
+          </div><!--end col-lg-12-->
+        </div><!---end row justify-->
+      </div><!--end container-->
+    </section>
+        <section class="section section-components pb-0" id="section-components">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <!-- Basic elements -->
+            <h2 class="mb-5">
+              <span>Botones</span>
+            </h2>
+            <p>Los botones son una parte fundamental de nuestra web. Aparte de ser un simple lugar donde puedes hacer clic, los botones deben saber llamar la atención al usuario sin ser excesivamente molestos, se deben entender y tener un acabado profesional.</p>
+            <p>los siguientes botones contienen un diseño moderno que puedes adaptar a tu sitio web</p>
+            <div class="btn btn-info">info</div>
+            <div class="btn btn-blue">blue</div>
+            <div class="btn btn-red">red</div>
+            <div class="btn btn-white">white</div>
+            <div class="btn btn-gray">gray</div>
+            <div class="btn btn-purple">purple</div>
+            <p>puedes utilizarzos mediante la siguiente estructura</p>
+            <pre>
+              <code>
+            &lt;div class="btn btn-info">info&lt;/div>
+            &lt;div class="btn btn-blue">blue&lt;/div>
+            &lt;div class="btn btn-red">red&lt;/div>
+            &lt;div class="btn btn-white">white&lt;/div>
+            &lt;div class="btn btn-gray">gray&lt;/div>
+            &lt;div class="btn btn-purple">purple&lt;/div>
+                
+              </code>
+            </pre>
+
+          </div><!--end col-lg-12-->
+        </div><!---end row justify-->
+      </div><!--end container-->
+    </section>
+
+
+        <section class="section section-components pb-0" id="section-components">
+            <div class="container">
+                <h2 class="mb-5">
+                    <span>Menus</span>
+                </h2>
+                <p>El elemento menu representa una barra de menú que consiste en una lista de comandos representada por una lista no ordenada de ítems (elementos li). Este elemento es simplemente una alternativa semántica al elemento ul que se utiliza para representar una lista no ordenada de comandos. <p>
+
+
+                <br>
+                <h2>barra de navegacion 1</h2>
+                <hr>
+
+                <nav>
+
+                    <div class="topnav">
+
+                        <div class="topnav-centered">
+                            <a href="#home" class="active"><i class="fa fa-html5"></i></a>
+                        </div>
+                        <div class="topnav-left">
+                            <a href="#news">Noticias</a>
+                            <a href="#contact">Contactenos</a>
+
+                        </div>
+
+                        <div class="topnav-right">
+                            <a href="#search">Que es esto?</a>
+                            <a href="#about">Sobre</a>
+                        </div>
+
+                    </div> 
+
+                </nav>
+
+                <br>
+                <h2>Codigo barra de navegacion 1</h2>
+                <hr>
+
+                <pre>
+<code>
+
+&lt;nav>
+
+  &lt;div class="topnav">
+
+    &lt;div class="topnav-centered">
+      &lt;a href="#home" class="active">&lt;i class="fa fa-html5">&lt;/i>&lt;/a>
+    &lt;/div>
+    &lt;div class="topnav-left">
+      &lt;a href="#news">Noticias&lt;/a>
+      &lt;a href="#contact">Contactenos&lt;/a>
+
+    &lt;/div>
+
+    &lt;div class="topnav-right">
+      &lt;a href="#search">Que es esto?&lt;/a>
+      &lt;a href="#about">Sobre&lt;/a>
+    &lt;/div>
+
+  &lt;/div> 
+&lt;/nav>
+</code> </pre>
+                <br>
+
+
+                <br>
+                <h2>barra de navegacion 2</h2>
+                <hr>
+
+
+                <nav>
+                    <div id="menu2" >
+                        <ul class="menu2">
+                            <li>
+                                <a class="active" href="#home">Home</a>
+                            </li>
+                            <li>
+                                <a href="#news">News</a>
+                            </li>
+                            <li>
+                                <a href="#contact">Contact</a>
+                            </li>
+                            <li>
+                                <a href="#about">About</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <br>
+                <h2>Codigo barra de navegacion 2</h2>
+                <hr>
+
+                <pre>
+       <code>
+&lt;nav>
+  &lt;div id="menu2" >
+    &lt;ul class="menu2">
+      &lt;li>
+        &lt;a class="active" href="#home">Home&lt;/a>
+      &lt;/li>
+      &lt;li>
+        &lt;a href="#news">News&lt;/a>
+      &lt;/li>
+      &lt;li>
+        &lt;a href="#contact">Contact&lt;/a>
+      &lt;/li>
+      &lt;li>
+        &lt;a href="#about">About&lt;/a>
+      &lt;/li>
+    &lt;/ul>
+  &lt;/div>
+&lt;/nav> 
+
+       </code> </pre>
+
+                <br>
+                <h2>barra de navegacion 3</h2>
+                <hr>
+
+                <nav>
+                    <nav class="menu3" >
+                        <ul>
+                            <li>MENU</li>
+                            <li>GRID</li>
+                            <li>TARJETAS</li>
+                            <li>TABLAS</li>
+                            <li>FORMULARIOS</li>
+                            <li>BOTONES DINAMICOS</li>  
+                        </ul>
+
+                    </nav>
+                </nav>
+
+                <br>
+                <h2>Codigo barra de navegacion 3</h2>
+                <hr>
+
+                <pre>
+      <code>
+          <nav>
+&lt;nav class="menu3">
+  &lt;ul>
+    &lt;li>MENU&lt;/li>
+    &lt;li>GRID&lt;/li>
+    &lt;li>TARJETAS&lt;/li>
+    &lt;li>TABLAS&lt;/li>
+    &lt;li>FORMULARIOS&lt;/li>
+    &lt;li>BOTONES DINAMICOS&lt;/li>  
+  &lt;/ul>
+
+&lt;/nav>
+
+      </code></pre>
+
+ <br>
+<h2>barra de navegacion 4</h2>
+  <hr>
+
+<nav class="menu4">
+  <section class="menu4-section">
+  <ul>
+  <a href="">INICIO</a>
+  <a href="">GRID</a>
+  <a href="">IMAGENES RESPONSIVE</a>
+  <a href="">FORMULARIOS</a>
+  <a href="">TABLAS</a> 
+  </ul>
+  </section>
+</nav>
+ <br>
+
+ <br>
+<h2>Codigo barra de navegacion 4</h2>
+  <hr>
+
+<pre>
+      <code>
+&lt;nav class="menu4">
+  &lt;section class="menu4-section">
+    &lt;ul>
+      &lt;a href="">INICIO&lt;/a>
+      &lt;a href="">GRID&lt;/a>
+      &lt;a href="">IMAGENES RESPONSIVE&lt;/a>
+      &lt;a href="">FORMULARIOS&lt;/a>
+      &lt;a href="">TABLAS&lt;/a> 
+    &lt;/ul>
+  &lt;/section>
+&lt;/nav>
+
+</code></pre>
+ <br>
+ </div>
+                </section>
+
+
+
+            <section class="section section-components pb-0" id="section-components">
+               <div class="container">
+                <h2 class="mb-5">
+                    <span>Footers</span>
+                </h2> 
+
+                <p>El elemento footer representa al pie de una sección o documento, donde los autores habitualmente colocan firmas, información acerca del autor, información de licencias, documentos relacionados, etc. En muchos casos, los contenidos del pie de un documento son consistentes a lo largo de todo el sitio.</p>
+
+                <p>Cuando un elemento footer es declarado dentro de un elemento de seccionamiento (como article o section) representa un pie en el ámbito de ese elmento. De lo contrario (cuando pertenece al elemento body) representa un pie para el documento entero. </p>
+
+                <h2>footer 1</h2>
+                <hr>
+                <footer>
+                    <div class="footer-container">
+                        <div class="footer-main">
+                            <div class="footer-columna">
+                                <h3>Suscribete</h3>
+                                <input type="email" placeholder="Escriba su Correo">
+                                <input type="submit" value=" Suscribirse">
+                            </div>
+
+                            <div class="footer-columna">
+                                <h3>Direccion</h3>
+                                <span class="fa fa-map-marker"><p>345 av San Salvador-El Salvador</p></span>
+                                <span class="fa fa-phone"><p>(+503) 68569865 </p></span>
+                                <span class="fa fa-envelope"><p>gjd@dfdjhd.com</p></span>
+                            </div>
+
+                            <div class="footer-columna">
+                                <h3>Informacion de nuestra empresa</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur repellat autem, error iste odio atque eum assumenda rem aliquam, consequatur excepturi reiciendis corrupti velit aperiam?</p>
+                            </div>
+                        </div>
+
+
+                        <div class="footer-copy-redes">
+                            <div class="main-copy-redes">
+                                <div class="footer-copy">
+                                    &copy; 2019, Todos los derechos reservados.
+                                </div>
+                                <div class="footer-redes">
+                                    <a href="#" class="fa fa-facebook"></a>
+                                    <a href="#" class="fa fa-twitter"></a>
+                                    <a href="#" class="fa fa-youtube-play"></a>
+                                    <a href="#" class="fa fa-github"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+                <br>
+                <h2>Codigo footer 1</h2>
+                <hr>
+
+                <pre>
+      <code>
+&lt;footer>
+    &lt;div class="footer-container">
+      &lt;div class="footer-main">
+        &lt;div class="footer-columna">
+          &lt;h3>Suscribete&lt;/h3>
+          &lt;input type="email" placeholder="Escriba su Correo">
+          &lt;input type="submit" value=" Suscribirse">
+        &lt;/div>
+
+        &lt;div class="footer-columna">
+          &lt;h3>Direccion&lt;/h3>
+          &lt;span class="fa fa-map-marker">&lt;p>345 av San Salvador-El Salvador&lt;/p>&lt;/span>
+          &lt;span class="fa fa-phone">&lt;p>(+503) 68569865 &lt;/p>&lt;/span>
+          &lt;span class="fa fa-envelope">&lt;p>gjd@dfdjhd.com&lt;/p>&lt;/span>
+        &lt;/div>
+
+        &lt;div class="footer-columna">
+          &lt;h3>Informacion de nuestra empresa&lt;/h3>
+          &lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur repellat autem, error iste odio atque &lt;br> eum assumenda rem aliquam, consequatur excepturi reiciendis corrupti velit aperiam?&lt;/p>
+        &lt;/div>
+      &lt;/div>
+
+
+    &lt;div class="footer-copy-redes">
+      &lt;div class="main-copy-redes">
+        &lt;div class="footer-copy">
+          &copy; 2019, Todos los derechos reservados.
+        &lt;/div>
+        &lt;div class="footer-redes">
+          &lt;a href="#" class="fa fa-facebook">&lt;/a>
+          &lt;a href="#" class="fa fa-twitter">&lt;/a>
+          &lt;a href="#" class="fa fa-youtube-play">&lt;/a>
+          &lt;a href="#" class="fa fa-github">&lt;/a>
+        &lt;/div>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+&lt;/footer>
+
+</code></pre>
+                <br>
+
+                <br>
+                <h2>footer 2</h2>
+                <hr>
+
+                <footer>
+                    <div class="footer-social-icons">
+                        <ul>
+                            <li><a href="#" target="blank"><i class="fa fa-facebook-f"></i></a></li>
+                            <li><a href="#" target="blank"><i class="fa fa-twitter-square"></i></a></li>
+                            <li><a href="#" target="blank"><i class="fa fa-google"></i></a></li>
+                            <li><a href="#" target="blank"><i class="fa fa-instagram"></i></a></li>
+                        </ul> 
+                    </div>
+
+
+                    <div class="footer-menu-one">
+                        <ul>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul> 
+                    </div>
+
+                    <div class="footer-menu-two">
+                        <ul>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Gallery</a></li>
+                            <li><a href="#">Media</a></li>
+                        </ul> 
+                    </div>
+
+
+                <div class="footer-bottom">
+                    <p><a href="#">Terminos y condiciones</a></p>
+                </div>    
+            </div>
+        </div>
+    </footer>
+
+</code></pre>
+    <section class="section section-components pb-0" id="section-components">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <!-- Basic elements -->
+            <h2>codigo de footer 2</h2>
+            <pre>
+      <code>
+&lt;footer>
+    &lt;div class="footer-social-icons">
+       &lt;ul>
+           &lt;li>&lt;a href="#" target="blank">&lt;i class="fa fa-facebook-f">&lt;/i>&lt;/a>&lt;/li>
+           &lt;li>&lt;a href="#" target="blank">&lt;i class="fa fa-twitter-square">&lt;/i>&lt;/a>&lt;/li>
+           &lt;li>&lt;a href="#" target="blank">&lt;i class="fa fa-google">&lt;/i>&lt;/a>&lt;/li>
+           &lt;li>&lt;a href="#" target="blank">&lt;i class="fa fa-instagram">&lt;/i>&lt;/a>&lt;/li>
+       &lt;/ul> 
+    &lt;/div>
+
+
+     &lt;div class="footer-menu-one">
+        &lt;ul>
+            &lt;li>&lt;a href="#">Blog&lt;/a>&lt;/li>
+            &lt;li>&lt;a href="#">News&lt;/a>&lt;/li>
+            &lt;li>&lt;a href="#">Services&lt;/a>&lt;/li>
+            &lt;li>&lt;a href="#">Products&lt;/a>&lt;/li>
+            &lt;li>&lt;a href="#">Contact us&lt;/a>&lt;/li>
+        &lt;/ul> 
+     &lt;/div>
+
+     &lt;div class="footer-menu-two">
+        &lt;ul>
+            &lt;li>&lt;a href="#">Blog&lt;/a>&lt;/li>
+            &lt;li>&lt;a href="#">News&lt;/a>&lt;/li>
+            &lt;li>&lt;a href="#">Gallery&lt;/a>&lt;/li>
+            &lt;li>&lt;a href="#">Media&lt;/a>&lt;/li>
+        &lt;/ul> 
+     &lt;/div>
+
+  &lt;div class="footer-bottom">
+      &lt;p>&lt;a href="#">Terminos y condiciones&lt;/a>&lt;/p>
+      &lt;/div>
+
+
+      
+    &lt;/div>
+  &lt;/div>
+  &lt;/footer>
+</code></pre>
+
+          </div><!--end col-lg-12-->
+        </div><!---end row justify-->
+      </div><!--end container-->
+    </section>
+
+
+</section>
+    <section class="section section-components pb-0" id="section-components">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <!-- Basic elements -->
+            <h2 class="mb-5">
+              <span>Slider</span>
+            </h2>
+            <p>
+              Los slider no normalizan automáticamente las dimensiones de la diapositiva,es posible que necesite usar estilos personalizados para dimensionar el contenido de manera apropiada. class slider hace referencia a un selector de clase, para aplicar estilos a los elementos marcados con esa clase usando hojas de stilo.css 
+            </p>
+
+              <div class="slider">
+    <ul>
+      <li>
+        <img src="../img/18.png" alt="">
+      </li>
+      <li>
+        <img src="../img/16.png" alt="">
+      </li>
+      <li>
+        <img src="../img/17.png" alt="">
+      </li>
+      <li>
+        <img src="../img/18.png" alt="">
+      </li>
+    </ul>
+  </div>
+      <br>
+    <h1>codigo de slider</h1>
+     
+
+    <pre>
+   <code>
+     
+     &lt;div class="slider">
+    &lt;ul>
+      &lt;li>
+        &lt;img src="./img/15.png" alt="">
+      &lt;/li>
+      &lt;li>
+        &lt;img src="./img/16.png" alt="">
+      &lt;/li>
+      &lt;li>
+        &lt;img src="./img/17.png" alt="">
+      &lt;/li>
+      &lt;li>
+        &lt;img src="./img/18.png" alt="">
+      &lt;/li>
+    &lt;/ul>
+  &lt;/div>
+
+
+   </code>
+ </pre>
+
+          </div><!--end col-lg-12-->
+        </div><!---end row justify-->
+      </div><!--end container-->
+    </section>
+    <section class="section section-components pb-0" id="section-components">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <!-- Basic elements -->
+            <h2 class="mb-5">
+              <span>Imagenes Responsive</span>
+            </h2>
+            <p>Las imagenes responsive estan diseñadas para adaptarse automaticamente al 100% de nuestra pantalla o si usamos el sistema de grillas esta se explandira hasta el tamaño predeterminado del sistema</p>
+              <hr>
+    <div class="row">
+        <div class=" col-s-4 col-b-2 col-xl-4">
+            <img src="../img/cv.png" class="img-responsive">
+            
+        </div>
+        <div class="col-s-4 col-b-2 col-xl-4">
+            <img src="../img/sku.png" class="img-responsive">
+            
+        </div>
+    </div>
+    <p>Para aplicar la imagen responsive se llamara con la siguiente clase</p>
+
+<code>
+ <pre>
+    
+  
+
+       &lt;img src="./img/cv.png" class="img-responsive">
+            
+</code>
+ </pre>
+
+          </div><!--end col-lg-12-->
+        </div><!---end row justify-->
+      </div><!--end container-->
+    </section>
+
+
+    <section class="section section-components pb-0" id="section-components">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <!-- Basic elements -->
+            <h2 class="mb-5">
+              <span>Tarjetas</span>
+            </h2>
+            <p>Las tarjetas pueden ser usadas para crear presentaciones sobre algun articulo en especial, esta designado solamente a crear un vista general de lo que se quiere conocer</p>
+              <div class="row">
+    <div class="col-s-3 col-b-4">
+      <div class="container-card ">
+       
+        <div class="card ">
+            <img src="../img/7.png">
+            <h4>CARROS DE LUJO</h4>
+            <p>Ferrari 458 Italia
+               Sucesor  Ferrari 488 GTB
+               Tipo Automóvil superdeportivo
+               Carrocerías  Berlinetta dos puertas
+               Configuración  Motor central trasero longitudinal, tracción trasera</p>
+            <a href="#">Leer más</a>
+        </div>
+      </div>
+    </div>
+    </div>
+    <br>
+
+    <p>La estructura que debemos tomar para llamar este objeto sera la siguiente</p>
+    <pre>
+      <code>
+          &lt;div class="row">
+    &lt;div class="col-s-3 col-b-4">
+      &lt;div class="container-card ">
+       
+        &lt;div class="card color-pink">
+            &lt;img src="./img/cv.png">
+            &lt;h4>CARROS DE LUJO&lt;/h4>
+            &lt;p>Ferrari 458 Italia
+               Sucesor  Ferrari 488 GTB
+               Tipo Automóvil superdeportivo
+               Carrocerías  Berlinetta dos puertas
+               Configuración  Motor central trasero longitudinal, tracción trasera</p>
+            &lt;a href="#">Leer más</a>
+        &lt;/div>
+      &lt;/div>
+    &lt;/div>
+      </code>
+    </pre>
+
+          </div><!--end col-lg-12-->
+        </div><!---end row justify-->
+      </div><!--end container-->
+    </section>
+<section class="section section-components pb-0" id="section-components">
+               <div class="container">
+                <h2 class="mb-5">
+                    <span>Formularios</span>
+                </h2> 
+
+                <p>Un formulario es un conjunto de controles (botones, cajas de texto, casillas de verificación, botones radio, etc) que permiten al usuario introducir datos y enviarlos al servidor web para su procesamiento.</p>
+                <br>
+                <pre>
+                    <code>
+                        &lt;form action="" method="">
+                            &lt;p>Nombre: &lt;input type="text" name="nombre" size="40">&lt;/p>
+                            &lt;p>Año de nacimiento: &lt;input type="number" name="nacido" min="1900">&lt;/p>
+                            &lt;p>Sexo:
+                            &lt;input type="radio" name="hm" value="h"> Hombre
+                            &lt;input type="radio" name="hm" value="m"> Mujer
+                            &lt;/p>
+                            &lt;p>
+                            &lt;input type="submit" value="Enviar">
+                            &lt;input type="reset" value="Borrar">
+                            &lt;/p>
+                            &lt;/form>
+                    </code>
+                </pre>
+<br>
+ <h2>Formulario 1</h2>
+ <hr>
+<div class="row">
+            <div class="col-4">
+            <div id="formulario1" class="sd">
+                <form>              
+                    <label>Nombres:</label>
+                    <input type="text" name="" class="form-control" placeholder="juan daniel">
+                    <br><br>                
+                    <label>Apellidos:</label>
+                    <input type="text" name="" class="form-control" placeholder="peres zoza">
+                    <br><br>
+                    <label>Correo Electronico:</label>
+                    <input type="e-mail" name="" class="form-control" placeholder="juanperez@gmail.com">
+                    <br><br>
+                    <label>Fecha De Nacimiento:</label>
+                    <input type="date" name="" class="form-control">
+                    <button class="btn btn-info">Guardar</button>
+            
+            </form>
+            </div>          
+        </div>
+ </div>
+
+<br>
+<h2>Codigo Formulario 1</h2>
+<hr>
+
+<pre>
+    <code>
+        &lt;div id="formulario1" class="sd">
+                &lt;form>              
+                    &lt;label>Nombres:&lt;/label>
+                    &lt;input type="text" name="" class="form-control" placeholder="juan daniel">
+                    &lt;br>&lt;br>                
+                    &lt;label>Apellidos:&lt;/label>
+                    &lt;input type="text" name="" class="form-control" placeholder="peres zoza">
+                    &lt;br>&lt;br>
+                    &lt;label>Correo Electronico:&lt;/label>
+                    &lt;input type="e-mail" name="" class="form-control" placeholder="juanperez@gmail.com">
+                    &lt;br>&lt;br>
+                    &lt;label>Fecha De Nacimiento:&lt;/label>
+                    &lt;input type="date" name="" class="form-control">
+                    &lt;button class="btn btn-info">Guardar&lt;/button>
+            
+            &lt;/form>
+            &lt;/div>      
+    </code>
+</pre>
+<br>
+ <h2>Formulario 2</h2>
+ <hr>
+ <div class="row">
+     <div class="col-4">
+           
+            <div id="formulario2" class="cuerpo">
+                <div class="c">
+                    <img src="../img/cv.png">
+                    <form>                      
+                            <input type="text" name="" class="form" placeholder="Usuario">  
+                        
+                            <input type="password" name="" class="form" placeholder="Contraseña">
+                        
+                        <button class="btn btn-c">entrar</button>
+            
+                    </form>
+                </div>
+                
+            </div>          
+        </div>
+ </div>
+<br>
+<h2>Codigo Formulario 2</h2>
+<hr>
+<pre>
+    <code>      
+           
+             &lt;div id="formulario2" class="cuerpo">
+                 &lt;div class="c">
+                     &lt;img src="../Download/img/cv.png">
+                     &lt;form>                      
+                             &lt;input type="text" name="" class="form" placeholder="Usuario">  
+                        
+                             &lt;input type="password" name="" class="form" placeholder="Contraseña">
+                        
+                         &lt;button class="btn btn-c">entrar &lt;/button>
+            
+                     &lt;/form>
+                 &lt;/div>
+                
+             &lt;/div>          
+      
+  
+    </code>
+</pre>
+<br>
+ <h2>Formulario 3</h2>
+ <hr>
+<div class="row">
+            <div class="col-4">
+                <div id="formulario3" class=" estilo">
+                <div class="contenido">
+                    <div class="super">
+                        <h2>Productos <span>Registro</span></h2>
+                    </div>
+                    <form class="regis">                
+                        <label>Producto:</label>
+                        <input type="" name="" class="ent">
+
+                        <label>Marca:</label>
+                        <input type="text" name="" class="ent">
+                
+                        <label>Precio Unitario</label>
+                        <input type="number" name="" class="ent">
+                    
+                        <label>Cantidad De Producto</label>
+                        <input type="number" name="" class="ent">
+                        <div class="bn_for">
+                            <input type="submit" class="bn-sub" value="Registrar">
+                            <input type="reset" class="bn-del" value="Limpiar">
+                        </div>                      
+            
+                    </form>
+                </div>
+                
+            </div>          
+        </div>
+    </div>
+        
+            <br>
+             <h2>Codigo Formulario 3</h2>
+             <hr>
+             <pre>
+                 <code>
+                     &lt;div id="formulario3" class=" estilo">
+                         &lt;div class="contenido">
+                            &lt;div class="super">
+                                 &lt;h2>Productos &lt;span>Registro&lt;/span>&lt;/h2>
+                            &lt;/div>
+                                &lt;form class="regis">                
+                                     &lt;label>Producto:&lt;/label>
+                                     &lt;input type="" name="" class="ent">
+
+                                     &lt;label>Marca:&lt;/label>
+                                     &lt;input type="text" name="" class="ent">
+                
+                                     &lt;label>Precio Unitario&lt;/label>
+                                     &lt;input type="number" name="" class="ent">
+                    
+                                     &lt;label>Cantidad De Producto&lt;/label>
+                                     &lt;input type="number" name="" class="ent">
+                                     &lt;div class="bn_for">
+                                     &lt;input type="submit" class="bn-sub" value="Registrar">
+                                     &lt;input type="reset" class="bn-del" value="Limpiar">
+                                     &lt;/div>                      
+            
+                                 &lt;/form>
+                             &lt;/div>
+                
+                        &lt;/div>
+                 </code>
+             </pre>
+            
+</section>
+            <section class="section section-components pb-0" id="section-components">
+               <div class="container">
+                <h2 class="mb-5">
+                    <span>Tablas</span>
+                </h2> 
+
+                <p>Una tabla no es otra cosa más que un medio de organizar datos en filas y columnas. Este concepto ha estado presente en nuestra sociedad por un largo período de tiempo y ha sido adoptado por HTML en sus etapas iniciales, como una forma de transmitir información que, de otro modo, no sería comprendida tan fácilmente.</p>
+                <p>En documentos HTML una tabla puede ser considerada, resumidamente, como un grupo de filas donde cada una contiene a un grupo de celdas. Esto es conceptualmente distinto a un grupo de columnas que contiene a un grupo de filas, y esta diferencia tendrá un impacto en la composición y comportamiento de la tabla.</p>
+                <p>
+                    Como muchas otras estructuras de HTML, las tablas son construidas utilizando elementos. En particular, una tabla básica puede ser declarada usando tres elementos, a saber, table (el contenedor principal), tr (representando a las filas contenedoras de las celdas) y td (representando a las celdas). Dejémoslo más claro con un ejemplo:
+                </p>
+                <br>
+                <pre>
+                    <code>
+                           &lt;table class="egt">
+
+                               &lt;tr>
+                                   &lt;td>Celda 1  &lt;/td>
+                                   &lt;td>Celda 2  &lt;/td>
+                                   &lt;td>Celda 3  &lt;/td>
+                               &lt;/tr>
+                               &lt;tr>
+                                  &lt;td>Celda 4  &lt;/td>
+                                  &lt;td>Celda 5  &lt;/td>
+                                  &lt;td>Celda 6  &lt;/td>
+                              &lt;/tr>
+                          &lt;/table>
+                    </code>
+                </pre>
+                <br>
+                <h2>Tabla 1</h2>
+                <hr>
+    <div class="row">
+        <div class="col-4">
+            
+            <div id="tabla1" >
+                <table class="tab">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>Correo</th>
+                    <th>Numero Telefonico</th>
+                    <th>Direccion</th>
+                </tr>
+                <tr>
+                    <td>Juan</td>
+                    <td>Peres</td>
+                    <td>holajua@gmail.com</td>
+                    <td>7208-0902</td>
+                    <td>Final El trovador, Av los sisimiles,calle la perdicion #123</td>
+                </tr>
+                <tr>
+                    <td>Karla</td>
+                    <td>Soza</td>
+                    <td>hisoza@gmail.com</td>
+                    <td>7208-0902</td>
+                    <td>Final El trovador, Av los sisimiles,calle la perdicion #123</td>
+                </tr>
+                <tr>
+                    <td>Juan</td>
+                    <td>Peres</td>
+                    <td>holajua@gmail.com</td>
+                    <td>7208-0902</td>
+                    <td>Final El trovador, Av los sisimiles,calle la perdicion #123</td>
+                </tr>
+                <tr>
+                    <td>Karla</td>
+                    <td>Soza</td>
+                    <td>hisoza@gmail.com</td>
+                    <td>7208-0902</td>
+                    <td>Final El trovador, Av los sisimiles,calle la perdicion #123</td>
+                </tr>               
+            </table>
+            </div>          
+        </div>
+        </div>
+
+             <br>
+             <h2>Codigo Tabla 1</h2>
+             <hr>
+             <pre>
+                 <code>
+                    &lt;div class="tabla1">
+                         &lt;table class="tab">
+                    &lt;tr>
+                    &lt;th>Nombre&lt;/th>
+                    &lt;th>Apellidos&lt;/th>
+                    &lt;th>Correo&lt;/th>
+                    &lt;th>Numero Telefonico&lt;/th>
+                    &lt;th>Direccion&lt;/th>
+                &lt;/tr>
+                &lt;tr>
+                    &lt;td>Juan&lt;/td>
+                    &lt;td>Peres&lt;/td>
+                    &lt;td>holajua@gmail.com&lt;/td>
+                    &lt;td>7208-0902&lt;/td>
+                    &lt;td>Final El trovador, Av los sisimiles,calle la perdicion #123&lt;/td>
+                &lt;/tr>
+                &lt;tr>
+                    &lt;td>Karla&lt;/td>
+                    &lt;td>Soza&lt;/td>
+                    &lt;td>hisoza@gmail.com&lt;/td>
+                    &lt;td>7208-0902&lt;/td>
+                    &lt;td>Final El trovador, Av los sisimiles,calle la perdicion #123&lt;/td>
+                &lt;/tr>
+                &lt;tr>
+                    &lt;td>Juan&lt;/td>
+                    &lt;td>Peres&lt;/td>
+                    &lt;td>holajua@gmail.com&lt;/td>
+                    &lt;td>7208-0902&lt;/td>
+                    &lt;td>Final El trovador, Av los sisimiles,calle la perdicion #123&lt;/td>
+                &lt;/tr>
+                &lt;tr>
+                    &lt;td>Karla&lt;/td>
+                    &lt;td>Soza&lt;/td>
+                    &lt;td>hisoza@gmail.com&lt;/td>
+                    &lt;td>7208-0902&lt;/td>
+                    &lt;td>Final El trovador, Av los sisimiles,calle la perdicion #123&lt;/td>
+                &lt;/tr>               
+            &lt;/table>
+                    &lt;/div>
+                     
+                 </code>
+             </pre>
+             <br>
+             <h2>Tabla 2</h2>
+             <hr>
+            <div class="row">
+             <div class="col-4">
+              <div id="tabla2" >
+                <table class= "customers">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>Correo</th>
+                </tr>
+                <tr>
+                    <td>Juan</td>
+                    <td>Peres</td>
+                    <td>holajua@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Karla</td>
+                    <td>Soza</td>
+                    <td>hisoza@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Juan</td>
+                    <td>Peres</td>
+                    <td>holajua@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Karla</td>
+                    <td>Soza</td>
+                    <td>hisoza@gmail.com</td>
+                </tr>               
+            </table>
+            </div>          
+        </div>
+    </div>
+    <br>
+             <h2>Codigo Tabla 2</h2>
+             <hr>
+             <pre>
+                 <code>
+                               &lt;div id="tabla2" >
+                          &lt;table class= "customers">
+                          &lt;tr>
+                              &lt;th>Nombre  &lt;/th>
+                              &lt;th>Apellidos  &lt;/th>
+                              &lt;th>Correo  &lt;/th>
+                          &lt;/tr>
+                          &lt;tr>
+                              &lt;td>Juan  &lt;/td>
+                              &lt;td>Peres  &lt;/td>
+                              &lt;td>holajua@gmail.com  &lt;/td>
+                          &lt;/tr>
+                          &lt;tr>
+                              &lt;td>Karla  &lt;/td>
+                              &lt;td>Soza  &lt;/td>
+                              &lt;td>hisoza@gmail.com  &lt;/td>
+                          &lt;/tr>
+                          &lt;tr>
+                              &lt;td>Juan  &lt;/td>
+                              &lt;td>Peres  &lt;/td>
+                              &lt;td>holajua@gmail.com  &lt;/td>
+                          &lt;/tr>
+                          &lt;tr>
+                              &lt;td>Karla  &lt;/td>
+                              &lt;td>Soza  &lt;/td>
+                              &lt;td>hisoza@gmail.com  &lt;/td>
+                          &lt;/tr>               
+                      &lt;/table>
+                      &lt;/div>        
+                 </code>
+             </pre>
+        <br>
+             <h2>Tabla 3</h2>
+             <hr>
+             <div class="row">
+                 <div class="col-4">
+           
+            <div id="tabla3" class="">
+                <table class="tab3">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>Correo</th>
+                </tr>
+                <tr>
+                    <td>Juan</td>
+                    <td>Peres</td>
+                    <td>holajua@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Karla</td>
+                    <td>Soza</td>
+                    <td>hisoza@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Juan</td>
+                    <td>Peres</td>
+                    <td>holajua@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Karla</td>
+                    <td>Soza</td>
+                    <td>hisoza@gmail.com</td>
+                </tr>               
+            </table>
+            </div>          
+        </div>
+             </div>
+              <br>
+             <h2> Codigo Tabla 3</h2>
+             <hr>
+             <pre>
+                 <code>
+                       &lt;div id="tabla3" class="">
+                  &lt;table class="tab3">
+                  &lt;tr>
+                      &lt;th>Nombre  &lt;/th>
+                      &lt;th>Apellidos  &lt;/th>
+                      &lt;th>Correo  &lt;/th>
+                  &lt;/tr>
+                  &lt;tr>
+                      &lt;td>Juan  &lt;/td>
+                      &lt;td>Peres  &lt;/td>
+                      &lt;td>holajua@gmail.com  &lt;/td>
+                  &lt;/tr>
+                  &lt;tr>
+                      &lt;td>Karla  &lt;/td>
+                      &lt;td>Soza  &lt;/td>
+                      &lt;td>hisoza@gmail.com  &lt;/td>
+                  &lt;/tr>
+                  &lt;tr>
+                      &lt;td>Juan  &lt;/td>
+                      &lt;td>Peres  &lt;/td>
+                      &lt;td>holajua@gmail.com  &lt;/td>
+                  &lt;/tr>
+                  &lt;tr>
+                      &lt;td>Karla  &lt;/td>
+                      &lt;td>Soza  &lt;/td>
+                      &lt;td>hisoza@gmail.com  &lt;/td>
+                  &lt;/tr>               
+              &lt;/table>
+              &lt;/div>      
+                 </code>
+             </pre>
+        
+
+            </section>
+
+
+
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-4">
+          <div class="copyright">
+            &copy; 2019
+            <a href="../index.html">Kanaria</a>.
+          </div>
+        </div>
+        <div class="col-md-4">
+          <ul class="nav nav-footer justify-content-end">
+            <li class="nav-item">
+              <a href="Documentacion.html" class="nav-link">Documentacion</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Github</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+    <!-- Core -->
+  <script src="../assets/vendor/jquery/jquery.min.js"></script>
+  <script src="../assets/vendor/popper/popper.min.js"></script>
+  <script src="../assets/vendor/bootstrap/bootstrap.min.js"></script>
+  <script src="../assets/vendor/headroom/headroom.min.js"></script>
+  <!-- Optional JS -->
+  <script src="../assets/vendor/onscreen/onscreen.min.js"></script>
+  <script src="../assets/vendor/nouislider/js/nouislider.min.js"></script>
+  <script src="../assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+  <!-- Argon JS -->
+  <script src="../assets/js/argon.js?v=1.0.1"></script>
+
+</html>
