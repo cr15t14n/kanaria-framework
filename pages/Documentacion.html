@@ -4,11 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Start your development with a Design System for Bootstrap 4.">
-  <meta name="author" content="Creative Tim">
+
   <title>Kanaria framework</title>
   <!-- Favicon -->
   <link href="../assets/img/brand/favicon.png" rel="icon" type="image/png">
+
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
   <!-- Icons -->
@@ -16,14 +16,16 @@
   <link href="../assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <!-- Argon CSS -->
   <link type="text/css" href="../assets/css/argon.css?v=1.0.1" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="../Download/kanaria.css">
+  <link rel="stylesheet" type="text/css" href="../Download/kanaria.min.css">
+
 
 
 </head>
 
 <body>
+  <section >
       <nav class="navbar navbar-expand-lg navbar-dark bg-default">
-        <div class="container">
+        <div class="container" >
           <a class="navbar-brand" href="../index.html">Kanaria</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-info" aria-controls="navbar-info" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -58,7 +60,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav-link-icon" href="../Download/kanaria.zip" target="_blank" download="kanaria.zip">
+                <a class="nav-link nav-link-icon" href="../Download/kanaria-framework.zip" target="_blank" download="kanaria.zip">
                   <i class="fa fa-download"></i>
                   <span class="nav-link-inner--text">Descargar</span>
                 </a>
@@ -69,8 +71,9 @@
       </nav>
     </section>
 
-   
-    <section class="section section-components pb-0" id="section-components">
+
+
+    <section class="section section-components pb-0" id="section-components" >
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-12">
@@ -332,12 +335,16 @@
 <h2>barra de navegacion 4</h2>
   <hr>
 
-<nav class="menu4">
-  <section class="menu4-section">
+<nav class="menu4-1">
+  <section class="menu4-1-sectiona">
   <ul>
   <a href="">INICIO</a>
   <a href="">GRID</a>
   <a href="">IMAGENES RESPONSIVE</a>
+  </ul>
+  </section>
+    <section class="menu4-1-sectionb">
+  <ul>
   <a href="">FORMULARIOS</a>
   <a href="">TABLAS</a> 
   </ul>
@@ -351,12 +358,16 @@
 
 <pre>
       <code>
-&lt;nav class="menu4">
-  &lt;section class="menu4-section">
+&lt;nav class="menu4-1">
+  &lt;section class="menu4-1-section">
     &lt;ul>
       &lt;a href="">INICIO&lt;/a>
       &lt;a href="">GRID&lt;/a>
       &lt;a href="">IMAGENES RESPONSIVE&lt;/a>
+    &lt;/ul>
+  &lt;/section>
+  &lt;section class="menu4-1-section">
+    &lt;ul>
       &lt;a href="">FORMULARIOS&lt;/a>
       &lt;a href="">TABLAS&lt;/a> 
     &lt;/ul>
@@ -636,7 +647,7 @@
             <h2 class="mb-5">
               <span>Imagenes Responsive</span>
             </h2>
-            <p>Las imagenes responsive estan diseñadas para adaptarse automaticamente al 100% de nuestra pantalla o si usamos el sistema de grillas esta se explandira hasta el tamaño predeterminado del sistema</p>
+            <p>Las imagenes responsive estan diseñadas para adaptarse automaticamente al 100% de nuestra pantalla o si usamos el sistema de grillas esta se expandira hasta el tamaño predeterminado del sistema</p>
               <hr>
     <div class="row">
         <div class=" col-s-4 col-b-2 col-xl-4">
@@ -676,10 +687,10 @@
             </h2>
             <p>Las tarjetas pueden ser usadas para crear presentaciones sobre algun articulo en especial, esta designado solamente a crear un vista general de lo que se quiere conocer</p>
               <div class="row">
-    <div class="col-s-3 col-b-4">
+    <div class="col-s-7 col-b-5 col-xl-4">
       <div class="container-card ">
        
-        <div class="card ">
+        <div class="card">
             <img src="../img/7.png">
             <h4>CARROS DE LUJO</h4>
             <p>Ferrari 458 Italia
@@ -698,18 +709,18 @@
     <pre>
       <code>
           &lt;div class="row">
-    &lt;div class="col-s-3 col-b-4">
+    &lt;div class="col-s-7 col-b-5 col-xl-4">
       &lt;div class="container-card ">
        
         &lt;div class="card color-pink">
-            &lt;img src="./img/cv.png">
+            &lt;img src="./img/7.png">
             &lt;h4>CARROS DE LUJO&lt;/h4>
             &lt;p>Ferrari 458 Italia
                Sucesor  Ferrari 488 GTB
                Tipo Automóvil superdeportivo
                Carrocerías  Berlinetta dos puertas
-               Configuración  Motor central trasero longitudinal, tracción trasera</p>
-            &lt;a href="#">Leer más</a>
+               Configuración  Motor central trasero longitudinal, tracción trasera&lt;/p>
+            &lt;a href="#">Leer más&lt;/a>
         &lt;/div>
       &lt;/div>
     &lt;/div>
@@ -748,7 +759,7 @@
  <h2>Formulario 1</h2>
  <hr>
 <div class="row">
-            <div class="col-4">
+            <div class="col-s-7 col-b-5 col-xl-4">
             <div id="formulario1" class="sd">
                 <form>              
                     <label>Nombres:</label>
@@ -775,7 +786,9 @@
 
 <pre>
     <code>
-        &lt;div id="formulario1" class="sd">
+&lt;div class="row">
+            &lt;div class="col-s-7 col-b-5 col-xl-4">
+            &lt;div id="formulario1" class="sd">
                 &lt;form>              
                     &lt;label>Nombres:&lt;/label>
                     &lt;input type="text" name="" class="form-control" placeholder="juan daniel">
@@ -791,14 +804,16 @@
                     &lt;button class="btn btn-info">Guardar&lt;/button>
             
             &lt;/form>
-            &lt;/div>      
+            &lt;/div>          
+        &lt;/div>
+ &lt;/div>   
     </code>
 </pre>
 <br>
  <h2>Formulario 2</h2>
  <hr>
  <div class="row">
-     <div class="col-4">
+     <div class="col-s-7 col-b-5 col-xl-4">
            
             <div id="formulario2" class="cuerpo">
                 <div class="c">
@@ -821,21 +836,25 @@
 <hr>
 <pre>
     <code>      
+ &lt;div class="row">
+     &lt;div class="col-s-7 col-b-5 col-xl-4">
            
-             &lt;div id="formulario2" class="cuerpo">
-                 &lt;div class="c">
-                     &lt;img src="../Download/img/cv.png">
-                     &lt;form>                      
-                             &lt;input type="text" name="" class="form" placeholder="Usuario">  
+            &lt;div id="formulario2" class="cuerpo">
+                &lt;div class="c">
+                    &lt;img src="../img/cv.png">
+                    &lt;form>                      
+                            &lt;input type="text" name="" class="form" placeholder="Usuario">  
                         
-                             &lt;input type="password" name="" class="form" placeholder="Contraseña">
+                            &lt;input type="password" name="" class="form" placeholder="Contraseña">
                         
-                         &lt;button class="btn btn-c">entrar &lt;/button>
+                        &lt;button class="btn btn-c">entrar&lt;/button>
             
-                     &lt;/form>
-                 &lt;/div>
+                    &lt;/form>
+                &lt;/div>
                 
-             &lt;/div>          
+            &lt;/div>          
+        &lt;/div>
+ &lt;/div>      
       
   
     </code>
@@ -844,7 +863,7 @@
  <h2>Formulario 3</h2>
  <hr>
 <div class="row">
-            <div class="col-4">
+            <div class="col-s-7 col-b-5 col-xl-4">
                 <div id="formulario3" class=" estilo">
                 <div class="contenido">
                     <div class="super">
@@ -879,32 +898,36 @@
              <hr>
              <pre>
                  <code>
-                     &lt;div id="formulario3" class=" estilo">
-                         &lt;div class="contenido">
-                            &lt;div class="super">
-                                 &lt;h2>Productos &lt;span>Registro&lt;/span>&lt;/h2>
-                            &lt;/div>
-                                &lt;form class="regis">                
-                                     &lt;label>Producto:&lt;/label>
-                                     &lt;input type="" name="" class="ent">
+&lt;div class="row">
+            &lt;div class="col-s-7 col-b-5 col-xl-4">
+                &lt;div id="formulario3" class=" estilo">
+                &lt;div class="contenido">
+                    &lt;div class="super">
+                        &lt;h2>Productos &lt;span>Registro&lt;/span>&lt;/h2>
+                    &lt;/div>
+                    &lt;form class="regis">                
+                        &lt;label>Producto:</label>
+                        &lt;input type="" name="" class="ent">
 
-                                     &lt;label>Marca:&lt;/label>
-                                     &lt;input type="text" name="" class="ent">
+                        &lt;label>Marca:</label>
+                        &lt;input type="text" name="" class="ent">
                 
-                                     &lt;label>Precio Unitario&lt;/label>
-                                     &lt;input type="number" name="" class="ent">
+                        &lt;label>Precio Unitario&lt;/label>
+                        &lt;input type="number" name="" class="ent">
                     
-                                     &lt;label>Cantidad De Producto&lt;/label>
-                                     &lt;input type="number" name="" class="ent">
-                                     &lt;div class="bn_for">
-                                     &lt;input type="submit" class="bn-sub" value="Registrar">
-                                     &lt;input type="reset" class="bn-del" value="Limpiar">
-                                     &lt;/div>                      
+                        &lt;label>Cantidad De Producto</label>
+                        &lt;input type="number" name="" class="ent">
+                        &lt;div class="bn_for">
+                            &lt;input type="submit" class="bn-sub" value="Registrar">
+                            &lt;input type="reset" class="bn-del" value="Limpiar">
+                        &lt;/div>                      
             
-                                 &lt;/form>
-                             &lt;/div>
+                    &lt;/form>
+                &lt;/div>
                 
-                        &lt;/div>
+            &lt;/div>          
+        &lt;/div>
+    &lt;/div>
                  </code>
              </pre>
             
@@ -942,9 +965,9 @@
                 <h2>Tabla 1</h2>
                 <hr>
     <div class="row">
-        <div class="col-4">
+        <div class="col-s-12 col-b-10 col-xl-9">
             
-            <div id="tabla1" >
+            <div class="tabla1">
                 <table class="tab">
                 <tr>
                     <th>Nombre</th>
@@ -991,11 +1014,14 @@
              <hr>
              <pre>
                  <code>
-                    &lt;div class="tabla1">
-                         &lt;table class="tab">
-                    &lt;tr>
+    &lt;div class="row">
+        &lt;div class="col-s-12 col-b-10 col-xl-9">
+            
+            &lt;div class="tabla1">
+                &lt;table class="tab">
+                &lt;tr>
                     &lt;th>Nombre&lt;/th>
-                    &lt;th>Apellidos&lt;/th>
+                  &lt;th>Apellidos&lt;/th>
                     &lt;th>Correo&lt;/th>
                     &lt;th>Numero Telefonico&lt;/th>
                     &lt;th>Direccion&lt;/th>
@@ -1029,16 +1055,17 @@
                     &lt;td>Final El trovador, Av los sisimiles,calle la perdicion #123&lt;/td>
                 &lt;/tr>               
             &lt;/table>
-                    &lt;/div>
-                     
+            &lt;/div>          
+        &lt;/div>
+        &lt;/div>
                  </code>
              </pre>
              <br>
              <h2>Tabla 2</h2>
              <hr>
             <div class="row">
-             <div class="col-4">
-              <div id="tabla2" >
+             <div class="col-s-12 col-b-10 col-xl-9">
+              <div class="tabla2" >
                 <table class= "customers">
                 <tr>
                     <th>Nombre</th>
@@ -1073,45 +1100,48 @@
              <h2>Codigo Tabla 2</h2>
              <hr>
              <pre>
-                 <code>
-                               &lt;div id="tabla2" >
-                          &lt;table class= "customers">
-                          &lt;tr>
-                              &lt;th>Nombre  &lt;/th>
-                              &lt;th>Apellidos  &lt;/th>
-                              &lt;th>Correo  &lt;/th>
-                          &lt;/tr>
-                          &lt;tr>
-                              &lt;td>Juan  &lt;/td>
-                              &lt;td>Peres  &lt;/td>
-                              &lt;td>holajua@gmail.com  &lt;/td>
-                          &lt;/tr>
-                          &lt;tr>
-                              &lt;td>Karla  &lt;/td>
-                              &lt;td>Soza  &lt;/td>
-                              &lt;td>hisoza@gmail.com  &lt;/td>
-                          &lt;/tr>
-                          &lt;tr>
-                              &lt;td>Juan  &lt;/td>
-                              &lt;td>Peres  &lt;/td>
-                              &lt;td>holajua@gmail.com  &lt;/td>
-                          &lt;/tr>
-                          &lt;tr>
-                              &lt;td>Karla  &lt;/td>
-                              &lt;td>Soza  &lt;/td>
-                              &lt;td>hisoza@gmail.com  &lt;/td>
-                          &lt;/tr>               
-                      &lt;/table>
-                      &lt;/div>        
+            &lt;div class="row">
+             &lt;div class="col-s-12 col-b-10 col-xl-9">
+              &lt;div class="tabla2" >
+                &lt;table class= "customers">
+                &lt;tr>
+                    &lt;th>Nombre&lt;/th>
+                    &lt;th>Apellidos&lt;/th>
+                    &lt;th>Correo&lt;/th>
+                &lt;/tr>
+                &lt;tr>
+                    &lt;td>Juan&lt;/td>
+                    &lt;td>Peres&lt;/td>
+                    &lt;td>holajua@gmail.com&lt;/td>
+                &lt;/tr>
+                &lt;tr>
+                    &lt;td>Karla&lt;/td>
+                    &lt;td>Soza&lt;/td>
+                    &lt;td>hisoza@gmail.com&lt;/td>
+                &lt;/tr>
+                &lt;tr>
+                    &lt;td>Juan&lt;/td>
+                    &lt;td>Peres&lt;/td>
+                    &lt;td>holajua@gmail.com&lt;/td>
+                &lt;/tr>
+                &lt;tr>
+                    &lt;td>Karla&lt;/td>
+                    &lt;td>Soza&lt;/td>
+                    &lt;td>hisoza@gmail.com&lt;/td>
+                &lt;/tr>               
+            &lt;/table>
+            &lt;/div>          
+        &lt;/div>
+    &lt;/div>        
                  </code>
              </pre>
         <br>
              <h2>Tabla 3</h2>
              <hr>
              <div class="row">
-                 <div class="col-4">
+                 <div class="col-s-12 col-b-10 col-xl-9">
            
-            <div id="tabla3" class="">
+            <div class="tabla3">
                 <table class="tab3">
                 <tr>
                     <th>Nombre</th>
@@ -1147,35 +1177,40 @@
              <hr>
              <pre>
                  <code>
-                       &lt;div id="tabla3" class="">
-                  &lt;table class="tab3">
-                  &lt;tr>
-                      &lt;th>Nombre  &lt;/th>
-                      &lt;th>Apellidos  &lt;/th>
-                      &lt;th>Correo  &lt;/th>
-                  &lt;/tr>
-                  &lt;tr>
-                      &lt;td>Juan  &lt;/td>
-                      &lt;td>Peres  &lt;/td>
-                      &lt;td>holajua@gmail.com  &lt;/td>
-                  &lt;/tr>
-                  &lt;tr>
-                      &lt;td>Karla  &lt;/td>
-                      &lt;td>Soza  &lt;/td>
-                      &lt;td>hisoza@gmail.com  &lt;/td>
-                  &lt;/tr>
-                  &lt;tr>
-                      &lt;td>Juan  &lt;/td>
-                      &lt;td>Peres  &lt;/td>
-                      &lt;td>holajua@gmail.com  &lt;/td>
-                  &lt;/tr>
-                  &lt;tr>
-                      &lt;td>Karla  &lt;/td>
-                      &lt;td>Soza  &lt;/td>
-                      &lt;td>hisoza@gmail.com  &lt;/td>
-                  &lt;/tr>               
-              &lt;/table>
-              &lt;/div>      
+&lt;div class="row">
+  &lt;div class="col-s-12 col-b-10 col-xl-9">
+           
+      &lt;div class="tabla3">
+          &lt;table class="tab3">
+            &lt;tr>
+              &lt;th>Nombre&lt;/th>
+              &lt;th>Apellidos&lt;/th>
+              &lt;th>Correo&lt;/th>
+            &lt;/tr>
+            &lt;tr>
+              &lt;td>Juan&lt;/td>
+              &lt;td>Peres&lt;/td>
+              &lt;td>holajua@gmail.com&lt;/td>
+            &lt;/tr>
+            &lt;tr>
+              &lt;td>Karla&lt;/td>
+              &lt;td>Soza&lt;/td>
+              &lt;td>hisoza@gmail.com&lt;/td>
+            &lt;/tr>
+            &lt;tr>
+              &lt;td>Juan&lt;/td>
+              &lt;td>Peres&lt;/td>
+              &lt;td>holajua@gmail.com&lt;/td>
+            &lt;/tr>
+            &lt;tr>
+              &lt;td>Karla&lt;/td>
+              &lt;td>Soza&lt;/td>
+              &lt;td>hisoza@gmail.com&lt;/td>
+            &lt;/tr>               
+          &lt;/table>
+      &lt;/div>          
+    &lt;/div>
+ &lt;/div>      
                  </code>
              </pre>
         
@@ -1183,27 +1218,27 @@
             </section>
 
 
+<footer>
+  <div class="row align-items-center justify-content-md-between">
 
-      <div class="row align-items-center justify-content-center">
-        <div class="col-md-4">
-          <div class="copyright">
+    <div class="col-md-5">
+      <div class="copyright">
             &copy; 2019
-            <a href="../index.html">Kanaria</a>.
-          </div>
-        </div>
-        <div class="col-md-4">
-          <ul class="nav nav-footer justify-content-end">
-            <li class="nav-item">
-              <a href="Documentacion.html" class="nav-link">Documentacion</a>
-            </li>
-            <li class="nav-item">
-              <a href="https://github.com/cr15t14n/kanaria-framework" class="nav-link">Github</a>
-            </li>
-          </ul>
-        </div>
+            <a href="../index.html">Kanaria framework</a>.
       </div>
     </div>
-  </footer>
+  
+  <div class="col-md-5">
+      <ul class="nav nav-footer justify-content-end">       
+        <li class="nav-item">
+          <a href="https://github.com/cr15t14n/kanaria-framework">Github</a>.
+        </li>
+      </ul>
+    </div>
+  </div><!--end div class row align-items-->
+</footer>
+
+
 
 
 

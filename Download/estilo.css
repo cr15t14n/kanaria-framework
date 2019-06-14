@@ -1,0 +1,62 @@
+
+.boton{
+    background-color: green;
+    height: 50px;
+    border-radius: 10px;
+}
+.menuauxilar{
+    
+    width: 70px;
+    height: auto;
+    position: fixed;/*para que siempre este en la pantalla*/
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.menuauxiliar .contenido{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
+}
+.crojo{
+    background-color: red;
+}
+
+
+.menudoc ul li{
+    text-decoration: none;
+    list-style: none;
+    font-size: 25px;
+}
+
+.boton{
+    width: 300px;
+    height: 50px;
+    background: black;
+    color: white;
+    margin-top: 50px;
+    cursor: pointer;
+    padding: 15px;
+    margin-left: -270px;
+    position: fixed;/*para que siempre este en la pantalla*/
+    margin-top: 10%;
+
+}
+
+.menudoc{   
+   display: none;
+    width: 300px;
+    height: 500px;
+    background-color: darkgray;
+        position: fixed;/*para que siempre este en la pantalla*/
+    margin-top: 10%;
+}
+
+.menudoc i{
+    float: right;
+    margin: -3px -5px;
+}
